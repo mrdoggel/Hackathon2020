@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  background: black;
+}
+
+.header {
+  display: flex;
+  height: 14vh;
+  max-width: 100%;
+  width: 100vw;
+  background: #212121;
+  z-index: 5;
+}
+
+.headerimg img {
+  height: 100%;
+}
+
+
+.dropdown {
+  position: absolute;
+  top: 7%;
+  left: 40.5%;
+  text-align: center;
+}
+
+.dropdown-innhold {
+  width: 100%;
+}
+
+.dropdown button {
+  padding: 5px;
+  border: none;
+  margin-right: 50px;
+  background: none;
+  text-decoration: bold;
+  text-align: center;
+  font-size: 1.5vw;
+  color: black;
+  background: white;
+  border: grey solid 2px;
+}
+
+.dropdown button:hover {
+  cursor: pointer;
+  border: black solid 2px;
+}
+
+.dropdown a, .dropdown img {
+  display: none;
+}
+
+.tekst {
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  padding: none;
+  font-size: 2.5vw;
+  font-family: fantasy;
+}
+
+.tekst a  {
+  padding: none;
+  border: none;
+  text-decoration: none;
+}
+
+.tekst h1:hover  {
+  color: darkgrey;
+}
+
+.tekst h1 {
+  border: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.search-container {
+  position: absolute;
+  top: 7%;
+  right:17%;
+  font-size: 1vw;
+}
+
+.search-container input {
+  padding: 0.5vw;
+  width: 70%;
+  float: left;
+}
+
+.search-container button {
+  display: inline;
+  float: right;
+  padding: 0.5vw;
+  cursor: pointer;
+}
+
+.login {
+  position: absolute;
+  top: 6%;
+  right:10px;
+  padding-right: 10px;
+}
+
+.login a, .login img {
+  display: none;
+}
+
+.login input {
+  width: 11vw;
+  font-size: 1vw;
+}
+
+.login .knapp1 {
+  float: left;
+  width: 40%;
+  display: inline;
+  margin: 0;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.login .reg {
+  float: right;
+  margin: 0;
+  width: 60%;
+  display: inline;
+  font-size: 1vw;
+  cursor: pointer;
+}
+
+.logg-content button {
+  cursor: pointer;
+}
+
+.header .active {
+  border-bottom: red solid 4px;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+    padding: 0;
+    background: black;
+}
+
+.content{
+    z-index: 1;
+    box-sizing: border-box;
+    height: 100%;
+    width: 60%;
+    margin-left: 20%;
+    padding: 0 2%;
+    background: black;
+}
+
+.stang{
+    width: 100vw;
+    max-width: 100%;
+    z-index: 4;
+}
+
+.stang > img {
+    width: 100%;
+    height: 20px;
+    z-index: 4;
+    border-bottom: black solid 2px;
+}
+
+.registrering {
+  width: 100%;
+  text-align: center;
+}
+
+.registrering input {
+  padding: 5px;
+  width: 50%;
+  margin-top: 5%;
+  font-size: 2vw;
+  border: grey solid 4px;
+}
+
+.registrering button {
+  margin-top: 5%;
+  padding: 5px;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.bildeBG{
+    position: absolute;
+    max-width: 20%;
+    max-height: 100%;
+    height: 100%;
+}
+.bildeBG2{
+    position: absolute;
+    left: 80%;
+    max-width: 20%;
+    max-height: 100%;
+    height: 100%;
+}
+
+.bildeBG > img{
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    z-index -1
+}
+.bildeBG2 > img{
+    width: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+    z-index -1;
+}
+
+.litenBox{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 25vw;
+    height: 45vh;
+    margin: 1% 2% 2%;
+    padding: 0% 0%;
+    background-color: black;
+    z-index: 10;
+}
+
+.litenBox > form > button > img {
+    width: 98.8%;
+    height: 44vh;
+    padding: 2px;
+}
+
+.litenBox button {
+  border: none;
+  cursor: pointer;
+}
+
+.storBox{
+    float: left;
+    width: 53vw;
+    height: 46vh;
+    margin: 1% 2%;
+    background-color: black;
+}
+
+.storBox > form > button > img {
+    width: 52.2vw;
+    height: 44vh;
+}
+
+.litenBox img:hover, .storBox img:hover {
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1vw;
+    cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+#arrBilde{
+    width: 80%;
+    height: 40vh;
+    margin: 10% 0 0 10%;
+    background-color: white;
+    z-index: 4;
+}
+
+#arrBilde img{
+    width: 100%;
+    height: 100%;
+}
+
+#tittel{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.content h1, p, h3 {
+    color: white;
+    margin-top: 1%;
+    padding-bottom: 5px;
+}
+
+#arrTekst{
+    width: 80%;
+    margin: 2% 0 0 10%;
+}
+
+.skalknapp {
+  position: absolute;
+  left: 50%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sorteringsbar {
+  z-index: 10;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+
+.sorteringsbar .dato {
+  position: absolute;
+  left: 25vw;
+  top: 17.4vh;
+}
+
+.sorteringsbar .dato p{
+  padding-right: 30%;
+  width: 100%;
+}
+
+.sorteringsbar .arragor{
+  position: absolute;
+  left: 10%;
+  margin-bottom: 5px;
+}
+
+.sorteringsbar .submitknapp {
+  position: absolute;
+  right: 25vw;
+  top: 20.2vh;
+  font-size:1vw;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1270px){
+
+  .flexbox{
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 100%;
+      width: 100vw;
+      height: 100%;
+      z-index: 1;
+      padding: 0;
+      background: black;
+  }
+
+    .content{
+        width: 100vw;
+        max-width: 100%;
+        margin-left: 0%;
+        padding: 0%;
+    }
+
+    .litenBox{
+        position: relative;
+        box-sizing: border-box;
+        float: left;
+        width: 100vw;
+        max-width: 98%;
+        height: 44vh;
+        margin: 0;
+        margin-left: 1%;
+        margin-bottom: 3%;
+        padding: 0;
+        background-color: black;
+        z-index: 10;
+    }
+
+    .litenBox > form > button > img {
+        width: 98.8;
+        height: 44vh;
+        padding: 0;
+    }
+
+    .litenBox button {
+      border: none;
+      cursor: pointer;
+    }
+
+    .storBox{
+        float: left;
+        width: 100vw;
+        max-width: 98%;
+        height: 46vh;
+        margin-left: 1%;
+        background-color: black;
+    }
+
+    .storBox > form > button > img {
+        width: 100vw;
+        max-width: 100%;
+        height: 44vh;
+    }
+
+    .litenBox img:hover, .storBox img:hover {
+        border-style: solid;
+        border-color: white;
+        border-width: 0.1vw;
+        cursor: pointer;
+    }
+
+    .tekst {
+      position: absolute;
+      top: 5vw;
+      left: 40%;
+      padding: none;
+      font-size: 3vw;
+      font-family: fantasy;
+    }
+
+    .tekst a  {
+      padding: none;
+      border: none;
+      text-decoration: none;
+    }
+
+    .tekst h1:hover  {
+      color: darkgrey;
+    }
+
+    .tekst h1 {
+      border: none;
+      color: black;
+      padding: 0;
+      margin: 0;
+      color: white;
+    }
+
+    #stang{
+        display: none;
+    }
+
+    .bildeBG, .bildeBG2{
+        display: none;
+    }
+
+    .dropdown {
+      position: absolute;
+      width: 10vw;
+      height: 10vw;
+      top: 2.5%;
+      left: 87%;
+      text-align: center;
+    }
+
+    .dropdown-innhold {
+      width: 5vw;
+      max-width: 100%;
+      display: none;
+    }
+
+    .dropdown button {
+      padding: 5px;
+      border: none;
+      margin-right: 50px;
+      background: none;
+      text-decoration: bold;
+      text-align: center;
+      font-size: 1.5vw;
+      color: black;
+      background: white;
+      border: grey solid 2px;
+    }
+
+    .dropdown button:hover {
+      cursor: pointer;
+      border: black solid 2px;
+    }
+
+    .dropdown a, .dropdown img {
+      display: block;
+      position: absolute;
+      width: 10vw;
+      height: 10vw;
+    }
+
+    .meny:hover{
+      cursor: pointer;
+    }
+
+    .dropdown .kryss img{
+      display: none;
+      cursor: pointer;
+    }
+
+    .login {
+      position: absolute;
+      width: 8vw;
+      height: 8vw;
+      top: 4%;
+      right: 18%;
+      padding-right: 10px;
+    }
+
+    .login a, .login img {
+      position: absolute;
+      width: 8vw;
+      height: 8vw;
+      display: block;
+    }
+
+    .logbtn:hover {
+      cursor: pointer;
+    }
+
+    .logg-content {
+      display: none;
+    }
+
+    .login .knapp1 {
+      float: left;
+      width: 40%;
+      display: inline;
+      margin: 0;
+      font-size: 1vw;
+    }
+
+    .login .reg {
+      float: right;
+      margin: 0;
+      width: 60%;
+      display: inline;
+      font-size: 1vw;
+    }
+
+    .search-container {
+      width: 100%;
+      position: absolute;
+      top: 7%;
+      right :68%;
+      font-size: 1vw;
+    }
+
+    .search-container input {
+      display: block;
+      padding: 0.5vw;
+      width: 20%;
+      float: right;
+
+    }
+
+    .search-container button {
+      display: block;
+      float: right;
+      padding: 0.5vw;
+    }
+}
